@@ -1,43 +1,60 @@
-The Task is to create a simple tic tac toe game using HTML, CSS and JavaScript.
+# Tic Tac Toe Game
 
-There are 4 subtasks, each of which implements some feature of the game.
+## Overview
 
-## SubTask0: Setup the game board using HTML and CSS.
+This project is a simple implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. The game supports two players who alternate turns to place their respective symbols (X and O) on a 3x3 grid. The objective is to get three of your symbols in a row, column, or diagonal to win the game. If the board is filled and no player has won, the game is declared a tie.
 
-### Note: SubTask0 can be skipped, and the HTML and CSS code provided in the zip file can be used as the game board.
+## Features
 
-1. Create index.html, styles.css and app.js files
-2. Create the game board and style it properly
-3. Add a button "restart" which will later be given the functionality to restart the game
+- **Two-Player Gameplay**: Players take turns to place their symbols on the board.
+- **Turn Indication**: The background color changes based on the current player's turn (X or O).
+- **Win Detection**: The game detects when a player has won and displays a message.
+- **Tie Detection**: The game detects when the board is full and no player has won, displaying a tie message.
+- **Restart Button**: A button to restart the game and clear the board.
+- **Enhanced UI**: Visual feedback with background color changes and messages to enhance the user experience.
 
-   - Hint 1: There should be 9 div elements, each of which is a cell for the game board.
-   - Hint 2: Use CSS Grid
+## Game Instructions
 
-## SubTask1: Initialize the Game State and Handle Cell Clicks
+1. Players take turns clicking on the cells of the 3x3 grid to place their symbols (X or O).
+2. The game alternates between players each turn, indicated by the background color.
+3. The first player to get three of their symbols in a row, column, or diagonal wins.
+4. If all cells are filled and no player has won, the game is declared a tie.
+5. Click the "Restart" button to clear the board and start a new game.
 
-### Concepts to be applied: JS Variables, Functions, Conditional Statements, Event Listeners and DOM
+## Screenshots
 
-1. For each of the 9 cells in the game board, add the functionality such that clicking on the cell will mark it with either X or O
-2. If X was marked in the previous move, then O will be marked in the next move, You may start with either X or O.
-3. Make sure that once a cell is marked, it doesn't change it's state
+### Initial Screen
+![Initial Screen - X's Turn](screenshots/initial.png)
 
-- Hint 1: get all the cells using DOM and store them in an array to manage their state.
-- Hint 2: Add a click event listener to each of the div tag using DOM, use conditional statements to avoid overwriting a cell's state
+<!-- ### X's Turn
+![X's Turn](screenshots/x_turn.png) -->
 
-## SubTask2: Implement the feature to check for the winner and end the game at that point.
+### O's Turn
+![O's Turn](screenshots/o_turn.png)
 
-### Concepts to be applied: JS Arrays, Functions, Conditional Statements, Loops.
+### X Wins
+![X Wins](screenshots/x_wins.png)
 
-1. Make two functions checkWin and checkTie for determining the winner of the game.
-2. Check the conditions for winning the game
+### Tie
+![Tie](screenshots/tie.png)
 
-- Hint 1: Note that there are only a handful of winning combinations.
-- Hint 2: Use loops to check if the any of the winning combinations occur, if the board is full and checkWin returns false, then it's a tie.
+## Setup
 
-## SubTask3:
+1. Clone the repository or download the ZIP file.
+2. Open `index.html` in your web browser to start the game.
 
-### Concepts to be applied: JS Functions, Loops.
+## File Structure
 
-1. Make a function to add functionality to the restart button
+- `index.html`: The main HTML file containing the structure of the game.
+- `styles.css`: The CSS file for styling the game board and elements.
+- `app.js`: The JavaScript file implementing the game logic and interactivity.
 
-- Hint 1: Clear the board using loops, and return to the original state of the board.
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+## Author
+
+Sai Surya Talla
+
+---
